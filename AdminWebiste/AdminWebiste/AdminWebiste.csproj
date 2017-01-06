@@ -167,9 +167,8 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +181,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\custom.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -191,6 +192,8 @@
     <None Include="Properties\PublishProfiles\AdminGitAzureApp - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\AdminGitAzureApp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="Scripts\custom.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -210,35 +213,76 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-    <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
-    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
-    <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
-    <Content Include="Views\Shared\Lockout.cshtml" />
-    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\AdminLayout.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Layout\animate.css\" />
+    <Folder Include="Layout\autosize\" />
+    <Folder Include="Layout\bootstrap-daterangepicker\" />
+    <Folder Include="Layout\bootstrap-progressbar\" />
+    <Folder Include="Layout\bootstrap-wysiwyg\" />
+    <Folder Include="Layout\bootstrap\" />
+    <Folder Include="Layout\Chart.js\" />
+    <Folder Include="Layout\cropper\" />
+    <Folder Include="Layout\datatables.net-bs\" />
+    <Folder Include="Layout\datatables.net-buttons-bs\" />
+    <Folder Include="Layout\datatables.net-buttons\" />
+    <Folder Include="Layout\datatables.net-fixedheader-bs\" />
+    <Folder Include="Layout\datatables.net-fixedheader\" />
+    <Folder Include="Layout\datatables.net-keytable\" />
+    <Folder Include="Layout\datatables.net-responsive-bs\" />
+    <Folder Include="Layout\datatables.net-responsive\" />
+    <Folder Include="Layout\datatables.net-scroller-bs\" />
+    <Folder Include="Layout\datatables.net-scroller\" />
+    <Folder Include="Layout\datatables.net\" />
+    <Folder Include="Layout\DateJS\" />
+    <Folder Include="Layout\devbridge-autocomplete\" />
+    <Folder Include="Layout\dropzone\" />
+    <Folder Include="Layout\echarts\" />
+    <Folder Include="Layout\eve\" />
+    <Folder Include="Layout\fastclick\" />
+    <Folder Include="Layout\flot-spline\" />
+    <Folder Include="Layout\flot.curvedlines\" />
+    <Folder Include="Layout\flot.orderbars\" />
+    <Folder Include="Layout\Flot\" />
+    <Folder Include="Layout\font-awesome\" />
+    <Folder Include="Layout\fontawesome\" />
+    <Folder Include="Layout\fullcalendar\" />
+    <Folder Include="Layout\gauge.js\" />
+    <Folder Include="Layout\google-code-prettify\" />
+    <Folder Include="Layout\iCheck\" />
+    <Folder Include="Layout\ion.rangeSlider\" />
+    <Folder Include="Layout\jquery-knob\" />
+    <Folder Include="Layout\jquery-mousewheel\" />
+    <Folder Include="Layout\jQuery-Smart-Wizard\" />
+    <Folder Include="Layout\jquery-sparkline\" />
+    <Folder Include="Layout\jquery.easy-pie-chart\" />
+    <Folder Include="Layout\jquery.hotkeys\" />
+    <Folder Include="Layout\jquery.inputmask\" />
+    <Folder Include="Layout\jquery.tagsinput\" />
+    <Folder Include="Layout\jquery\" />
+    <Folder Include="Layout\jqvmap\" />
+    <Folder Include="Layout\jszip\" />
+    <Folder Include="Layout\malihu-custom-scrollbar-plugin\" />
+    <Folder Include="Layout\mjolnic-bootstrap-colorpicker\" />
+    <Folder Include="Layout\mocha\" />
+    <Folder Include="Layout\moment\" />
+    <Folder Include="Layout\morris.js\" />
+    <Folder Include="Layout\normalize-css\" />
+    <Folder Include="Layout\nprogress\" />
+    <Folder Include="Layout\parsleyjs\" />
+    <Folder Include="Layout\pdfmake\" />
+    <Folder Include="Layout\pnotify\" />
+    <Folder Include="Layout\raphael\" />
+    <Folder Include="Layout\requirejs\" />
+    <Folder Include="Layout\select2\" />
+    <Folder Include="Layout\skycons\" />
+    <Folder Include="Layout\starrr\" />
+    <Folder Include="Layout\switchery\" />
+    <Folder Include="Layout\transitionize\" />
+    <Folder Include="Layout\validator\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
