@@ -177,83 +177,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Attendence.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BiddingFloor.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BMWModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BMWModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BMWModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\BMWModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BMWModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ContractProduct.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Deal.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Manufacturer.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Order.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Reply.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Request.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\RequestDescription.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\RequestProduct.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\RequestType.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Review.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Role.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Shop.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ShopCategory.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ShopProduct.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SysCategory.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SysProduct.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SysProductAttribute.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\User.cs">
-      <DependentUpon>BMWModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -391,25 +316,8 @@
     <Content Include="Layouts\js\jquery.uploadify-3.1.min.js" />
     <Content Include="Layouts\js\modernizr.js" />
     <Content Include="Layouts\js\retina.js" />
-    <Content Include="Models\BMWModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BMWModel.edmx</DependentUpon>
-      <LastGenOutput>BMWModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\BMWModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>BMWModel.edmx</DependentUpon>
-      <LastGenOutput>BMWModel.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\BMWModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>BMWModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\BMWModel.edmx.diagram">
-      <DependentUpon>BMWModel.edmx</DependentUpon>
-    </Content>
     <Content Include="Layouts\font\fontawesome-webfont-0.eot" />
     <Content Include="Layouts\font\fontawesome-webfont-62877.eot" />
     <Content Include="Layouts\font\fontawesome-webfont-62877.ttf" />
