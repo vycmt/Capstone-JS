@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="6cbca1b17e8b4d21914fd53263247718" Name="Diagram1">
+      <Diagram DiagramId="6cbca1b17e8b4d21914fd53263247718" Name="Diagram1" ZoomLevel="86">
         <EntityTypeShape EntityType="BMWModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BMWModel.Attendence" Width="1.5" PointX="5.25" PointY="17.875" IsExpanded="true" />
         <EntityTypeShape EntityType="BMWModel.BiddingFloor" Width="1.5" PointX="7.5" PointY="22.125" IsExpanded="true" />
@@ -62,6 +62,7 @@
         <AssociationConnector Association="BMWModel.FK_UserClaims_Users" ManuallyRouted="false" />
         <AssociationConnector Association="BMWModel.FK_UserLogins_Users" ManuallyRouted="false" />
         <AssociationConnector Association="BMWModel.UserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BMWModel.sysdiagram" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
